@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vacation Rentals</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .circle-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .bg-header {
+        background-image: url("https://www.w3schools.com/w3images/beach3.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .card-custom {
+        background-color: #f9f5e9;
+        padding: 30px 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Vacation Rentals</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Top Destinations</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservation</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-2">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-header">
+      <h1 class="display-4">Best Vacation Rentals</h1>
+      <p>Agilla quam</p>
+      <a href="#" class="btn btn-primary">Start Now!</a>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card-custom">
+            <img
+              src="https://www.w3schools.com/w3images/house5.jpg"
+              class="circle-img mb-3"
+              alt="Type 1"
+            />
+            <h5>Type 1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a href="#" class="btn btn-success btn-sm">Book Now @ $100</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card-custom">
+            <img
+              src="https://www.w3schools.com/w3images/house2.jpg"
+              class="circle-img mb-3"
+              alt="Type 2"
+            />
+            <h5>Type 2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a href="#" class="btn btn-danger btn-sm">Book Now @ $200</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card-custom">
+            <img
+              src="https://www.w3schools.com/w3images/house3.jpg"
+              class="circle-img mb-3"
+              alt="Type 3"
+            />
+            <h5>Type 3</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a href="#" class="btn btn-info btn-sm">Book Now @ $150</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 text-muted">&copy; Vacation Rentals</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
